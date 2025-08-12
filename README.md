@@ -34,12 +34,22 @@ await loginPage.loginInfo('username', 'password');
 ## Getting Started
 1. Install dependencies:
 ```bash
-npm install
+npm init -y
+```
+2. Install playwright:
+```bash
+npm init playwright@latest
 ```
 
-2. Run tests:
+3. Run tests:
 ```bash
 npx playwright test
+OR
+npx playwright test tests/demo/login.spec.js --project chromium --headed
+```
+4. Record tests:
+```bash
+npx playwright codegen
 ```
 
 ## Best Practices
